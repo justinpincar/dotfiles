@@ -3,7 +3,7 @@
 
 " -----------------------------------------------------------
 " Pathogen configuration
-" ----------------------------------------------------------- 
+" -----------------------------------------------------------
 
 set nocompatible
 filetype off
@@ -24,7 +24,7 @@ set hlsearch            " Highlight search results
 set visualbell t_vb=    " Get rid of that annoying error beep & flash
 set expandtab           " Use soft tabs
 set tabstop=2           " Width of soft tabs
-set autoindent 
+set autoindent
 set shiftwidth=2        " Width of autoindent
 set cindent             " C-style autoindenting
 set cinoptions=(0       " Align arguments separated by line breaks inside parens
@@ -72,7 +72,7 @@ end
 let mapleader=','
 let maplocalleader=';'
 
-" kj - the easy way to escape insert mode 
+" kj - the easy way to escape insert mode
 inoremap kj <Esc>
 
 " Q - the easy way to quit
@@ -146,8 +146,6 @@ map <M-D-r>   :SweetVimRspecRunPrevious<CR>
 " Plugin configuration
 " -----------------------------------------------------------
 
-runtime 'bundle/matchit/plugin/matchit.vim'
-
 let g:CommandTMaxDepth=8
 let g:CommandTMaxHeight=10
 let g:NERDTreeWinSize=20
@@ -160,7 +158,7 @@ let g:NERDTreeMinimalUI=1
 let vimclojure#HighlightBuiltins=1
 let vimclojure#ParenRainbow=1
 
-" Ack functions, taken from: 
+" Ack functions, taken from:
 " https://github.com/pivotal/vim-config/commit/ddb041154c250e2eefacdc2916e7bbd3c51f42c0#diff-2
 function! AckCommand()
   let command = "ack ".expand("<cword>")
@@ -183,7 +181,7 @@ vmap <Leader>a :call AckVisual()<CR>
 " -----------------------------------------------------------
 
 " Source this file after saving it
-" autocmd bufwritepost .vimrc source $MYVIMRC 
+" autocmd bufwritepost .vimrc source $MYVIMRC
 
 " -----------------------------------------------------------
 " Post-init configuration

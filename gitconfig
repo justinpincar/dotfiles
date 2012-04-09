@@ -2,7 +2,7 @@
 	name = Justin Pincar
 	email = justinpincar@gmail.com
 [color]
-	ui = auto
+	ui = true
 [diff]
 	ignoreSubmodules = dirty
 [github]

@@ -15,7 +15,7 @@ task :install do
     link_file(f.expand_path, transform_file_name(f))
   end
 
-  system "ruby ./vim/bundle/command-t/ruby/command-t/extconf.rb && make"
+  system "cd ./vim/bundle/command-t/ruby/command-t && ruby ./extconf.rb && make"
 end
 
 def transform_file_name(original_name)
