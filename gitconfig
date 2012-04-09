@@ -1,40 +1,9 @@
 [user]
-	name = David Jacobs
-	email = david@wit.io
+	name = Justin Pincar
+	email = justinpincar@gmail.com
 [color]
 	ui = auto
-[apply]
-	whitespace = nowarn
-[core]
-	filemode = false
-	excludesfile = ~/.gitignore
 [diff]
-	ignoreSubmodules = dirty 
+	ignoreSubmodules = dirty
 [github]
-	user = davejacobs
-[alias]
-  a = add
-  c = commit
-  d = diff
-  s = status
-  st = status
-  ci = commit
-  br = branch
-  co = checkout
-  pu = push
-  pl = pull
-  df = diff
-  lg = log -p
-  who = shortlog -s --
-  lgp = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  logp = --pretty=format:"%h - %an, %ar : %s"
-
-  feature = flow feature
-  release = flow release
-  hotfix = flow hotfix
-  support = flow support
-
-  ft = flow feature
-  rl = flow release
-  hf = flow hotfix
-  sp = flow support
+	user = justinpincar

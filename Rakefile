@@ -15,7 +15,6 @@ task :install do
     link_file(f.expand_path, transform_file_name(f))
   end
 
-  system "brew install ack"
   system "ruby ./vim/bundle/command-t/ruby/command-t/extconf.rb && make"
 end
 
@@ -35,7 +34,7 @@ def link_file(target, symlink, replace_all=false)
   mode = replace_all ? 'f' : 'i'
 
   # -f and -i will mess up symlinks for directories
-  mode = nil if target.directory? 
+  mode = nil if target.directory?
 
   system %Q{ln -s -v#{mode} "#{target.expand_path}" "#{symlink.expand_path}"}
 end
