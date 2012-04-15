@@ -34,7 +34,8 @@ set smarttab            " Use shiftwidth to tab at line beginning
 set wrap                " Wrap text inside screen
 set linebreak           " Wrap words, not characters
 set linespace=4         " Baseline spacing, measured in pixels
-set nolist              " Do not show difference between tabs and spaces
+set list                " Do show difference between tabs and spaces
+set listchars=tab:>-,trail:·,nbsp:·
 set number              " Show line numbers
 set incsearch           " Incremental search
 set ignorecase          " Ignore search case
@@ -195,3 +196,12 @@ if getcwd() == expand('~')
   endif
 endif
 set foldlevel=20
+
+fun! <SID>StripTrailingWhitespaces()
+  let l = line(".")
+  let c = col(".")
+  %s/\s\+$//e
+  call cursor(l, c)
+endfun
+
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
