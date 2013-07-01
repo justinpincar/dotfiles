@@ -9,7 +9,6 @@ set nocompatible
 filetype off
 call pathogen#infect()
 call pathogen#helptags()
-call yankstack#setup()
 source ~/.vim/autoload/slime.vim
 filetype plugin indent on
 syntax on
@@ -72,15 +71,6 @@ end
 
 let mapleader=','
 let maplocalleader=';'
-
-" kj - the easy way to escape insert mode
-inoremap kj <Esc>
-
-" Q - the easy way to quit
-noremap Q :q<CR>
-
-" Leader/z - the easy way to fold one level
-noremap <Leader>z zMzr
 
 " Leader/a - the easy way to select all
 noremap <Leader>aa ggVG
@@ -149,6 +139,7 @@ map <M-D-r>   :SweetVimRspecRunPrevious<CR>
 
 let g:CommandTMaxDepth=8
 let g:CommandTMaxHeight=10
+let g:CommandTMaxFiles=64000
 let g:NERDTreeWinSize=20
 let g:NERDTreeChDirMode=2
 let g:NERDTreeDirArrows=1
