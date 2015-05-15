@@ -1,9 +1,12 @@
+[core]
+  ignorecase = false
 [user]
 	name = Justin Pincar
 	email = justinpincar@gmail.com
 [color]
 	ui = true
-[diff]
-	ignoreSubmodules = dirty
 [github]
 	user = justinpincar
+[push]
+	default = simple
+

@@ -7,7 +7,7 @@
 --color
 
 --type-add=ruby=.haml,.sass,.scss
---type-add=html=.haml,.ejs
+--type-add=html=.haml,.ejs,.slim
 --type-add=css=.sass,.scss
 
 --type-add=ruby=Rakefile,Capfile,Gemfile
@@ -17,7 +17,7 @@
 --type-set=coffeescript=.coffee
 
 --type-set=json=.json
---type-add=js=.json
+--type-add=js=.json,.handlebars
 --type-add=yaml=.json
 
 --type-set=conf=.conf,.config
